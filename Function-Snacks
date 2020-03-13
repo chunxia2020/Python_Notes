@@ -1,0 +1,61 @@
+#### 1. Save list using pickle ####
+#### 2. add lis to list using extend ####
+#### 3.How to create a folder ####
+#### 4.insert at the beginning of an array ####
+#### 5. Set a string as a variable name    ####
+
+
+###################################
+#### 1. Save list using pickle ####
+###################################
+  <<Problem description>>:
+How to save data of the same data type to a file?
+  <<Solution>> : 
+import pickle
+f = open('store.pckl', 'wb')		# the key word wb is important
+pickle.dump(obj, f)
+f.close()
+
+f = open('store.pckl', 'rb')
+obj = pickle.load(f)
+f.close()
+	<<Note>>:
+obj can be created as obj = []
+obj.append(a)..... append whatever you want, so obj is list with all kinds of data types.
+#########################################
+#### 2. add lis to list using extend ####
+#########################################
+	<<Problem description>>:
+How to add one list to another list?
+	<<Solution>>:
+list1 = ["a", "b" , "c"]
+list2 = [1, 2, 3]
+list1.extend(list2)
+print(list1)
+##################################
+#### 3.How to create a folder ####
+##################################
+	<<Solution>>: This is a self made function for creating a folder if not existed
+def CreateFolder(path, filename):
+    import os
+    new_filename = path + filename
+    if not os.path.exists(new_filename):
+        os.makedirs(new_filename)
+###############################################
+#### 4.insert at the beginning of an array ####
+###############################################
+>>>var=7
+>>>array = [1,2,3,4,5,6]
+>>>array.insert(0,var)
+>>>array
+[7, 1, 2, 3, 4, 5, 6]
+###############################################
+#### 5. Set a string as a variable name    ####
+###############################################
+food = 'bread'
+vars()[food] = 123
+print bread  # --> 123
+
+vars()[food] = 1
+vas()[food] = vas()[food] + 1
+print bread  # --> 2
