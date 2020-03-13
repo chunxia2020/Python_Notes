@@ -3,6 +3,7 @@
 #### 3.How to create a folder ####
 #### 4.insert at the beginning of an array ####
 #### 5. Set a string as a variable name    ####
+#### 6. Convert list of tuples to list of list####
 
 
 ###################################
@@ -59,3 +60,19 @@ print bread  # --> 123
 vars()[food] = 1
 vas()[food] = vas()[food] + 1
 print bread  # --> 2
+##################################################
+#### 6. Convert list of tuples to list of list####
+##################################################
+Both methods are really neat!!
+	<Method 1>:
+>>>test_list = [(1,2),(3,4),(5,6)]
+>>>res = [list(i) for i in test_list]
+>>> print(res)
+[[1, 2], [3, 4], [5, 6]]
+	<Method 2>:
+>>>test_list = [(1,2),(3,4),(5,6)]
+>>> print(map(list, test_list))
+<map object at 0x000001A4B1536348>
+>>> print(list(map(list, test_list)))
+[[1, 2], [3, 4], [5, 6]]
+
