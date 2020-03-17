@@ -1,0 +1,9 @@
+#=================== Console font size ======================
+.script-view .line {
+  font-size: 16px;
+}
+
+#=================== Comment color ======================
+.syntax--comment, .syntax--punctuation.syntax--definition.syntax--comment {
+  color: #18C29C; /* Darkish-Red */
+}
