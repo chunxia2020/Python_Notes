@@ -17,7 +17,7 @@ plt.show()
 import matplotlib.pyplot as plt
 fig, ax = plt.subplots(3, 2)        # 3 Rows and 1 Col
 
-ax[0, 0].plot(x1, delta1, color='black', marker='.',linestyle = '-', label = 'f1: '+ str(f1) + 'um')
+ax[0, 0].plot(x1, delta1, color='black', marker='.', markerfacecolor='blue', linestyle = '-', label = 'f1: '+ str(f1) + 'um')
 ax[0, 0].legend(loc="lower left")
 
 plt.show()
