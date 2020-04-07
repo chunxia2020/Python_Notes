@@ -33,3 +33,5 @@ mpl.rcParams.update({'font.size': 12})
 axs.set_title('subplot 1')
 axs.set_xlabel('distance (m)')
 axs.set_ylabel('Damped oscillation')
+
+ax.tick_params(direction='out', length=6, width=2, colors='r', grid_color='r', grid_alpha=0.5)
