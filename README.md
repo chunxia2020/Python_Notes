@@ -9,7 +9,7 @@ Brackets-Git is an extension for Brackets editor. It provides Git integration fo
     - [Git for Windows](https://gitforwindows.org/) with the recommended [settings](https://raw.githubusercontent.com/zaggino/brackets-git/master/screenshots/gitInstall.png).
 
 
-- **Extensions for Brackets: **
+- **Extensions for Brackets:**
     - Brackets Git
     - Markdown Preview
 - **Push and pull Repositories on Github**
