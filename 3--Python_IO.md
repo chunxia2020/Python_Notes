@@ -1,7 +1,7 @@
 # Input/Output with Python
 
 In this file, **three methods** will be introduced for input with python
-  1. **argparse**
+  ## 1. **argparse**
 
 The following program shows an easy example of input to numbers and output their sum.
 ```python
