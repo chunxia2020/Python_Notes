@@ -53,7 +53,7 @@ if __name__ == '__main__':
     - `-num1`, `-num2`: long names of variables. They are the real **attributes** instead of the short names
     - `type=float`: Data type can be: float, int, str and so on...
     - `default=2`: Set the default number
-    - `metavar=``: Make the help file neat
+    - `metavar=: Make the help file neat
     - `'help='input the first number'`: help string
 
 ### Example:
