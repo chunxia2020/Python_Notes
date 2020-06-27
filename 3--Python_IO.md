@@ -40,12 +40,10 @@ if __name__ == '__main__':
 >python D:\WORK\test.py -n1 5 -n2 7
   12
 ```
-  - ```python
-  parser = argparse.ArgumentParser(description='Do Math')```
+  - `parser = argparse.ArgumentParser(description='Do Math')1
     - **parser** is a container to hold arguments
     - For description, it's a descriptive string to state the functionality of script.
-  - ```python
-  parser.add_argument('-n1', '--num1', type=float,  default=2, metavar='', help='input the first number')```
+  - `parser.add_argument('-n1', '--num1', type=float,  default=2, metavar='', help='input the first number')`
 
     - `-n1`, `-n2`: short names of variables
     - `-num1`, `-num2`: long names of variables. They are the real **attributes** instead of the short names
