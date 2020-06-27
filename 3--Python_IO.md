@@ -2,7 +2,7 @@
 
 In this file, **three methods** will be introduced for input with python
   - **argparse**
-  - ****
+  - **sys.argv**
 
   ## 1. **argparse**
 
@@ -54,3 +54,32 @@ if __name__ == '__main__':
     - `default=2`: Set the default number
     - `metavar=``: Make the help file neat
     - `'help='input the first number'`: help string
+
+## 2. **sys.argv**
+
+It simply takes whatever is in the input, here is how it works
+ - Only show all the inputs
+
+ ```python
+ #------------ Program body -------------
+ import sys
+ print(sys.argv)
+ ```
+ ```python
+ #------------ Run in windows terminal -------------
+ >D:/WORK/test.py 1 2 3 4 5
+    ['D:/WORK/test.py', '1', '2', '3', '4', '5']
+ ```
+
+ - Only take the **input numbers**, convert to **float** type, and put them in a **list**
+ ```python
+ #------------ Program body -------------
+ import sys
+ input = map(float,sys.argv[1:])
+ print(list(input))
+ ```
+ ```python
+ #------------ Run in windows terminal -------------
+ >D:/WORK/test.py 1 2 3 4 5
+    [1.0, 2.0, 3.0, 4.0, 5.0]
+ ```
