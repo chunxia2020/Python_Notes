@@ -5,9 +5,7 @@ In this file, **three methods** will be introduced for input with python
 
 The following program shows an easy example of input to numbers and output their sum.
 ```python
-#####################################################################################
-################## Programming body #################################################
-#####################################################################################
+################## Programming body ###################################
 import argparse   # First thing to do is to import the package
 
 parser = argparse.ArgumentParser(description='Do Math')
@@ -20,8 +18,9 @@ def add(a, b):
 
 if __name__ == '__main__':
     print(add(args.num1, args.num2))   # Must be num1 and num2 instead of n1 and n2
-
-################### Run in python terminal ############################################
+```
+```python
+################### Run in python terminal ############################
 # I'll take windows as an example
 >conda activate python3.7
 # ----------- Run help ---------------------
