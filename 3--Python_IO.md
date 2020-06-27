@@ -3,6 +3,7 @@
 In this file, **three methods** will be introduced for input with python
   - **argparse**
   - **sys.argv**
+  - **yaml File**
 
   ## 1. **argparse**
 
