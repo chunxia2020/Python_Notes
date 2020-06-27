@@ -7,7 +7,7 @@ In this file, **three methods** will be introduced for input with python
 
   ## 1. **argparse**
 
-The following program shows an easy example of input to numbers and output their sum.
+The following program shows an easy example of input to numbers and output their sum. __The code hase bo be executed in terminal__
 ```python
 ################## Programming body ###################################
 import argparse   # First thing to do is to import the package
@@ -55,6 +55,74 @@ if __name__ == '__main__':
     - `default=2`: Set the default number
     - `metavar=``: Make the help file neat
     - `'help='input the first number'`: help string
+
+### Example:
+```python
+import argparse
+
+def main(data):
+    print(vars(data))
+    print(vars(data)['t1'])
+    for i, j in vars(data).items():
+        print(i, j)
+
+if __name__ == '__main__':
+    parser = argparse.ArgumentParser()
+    parser.add_argument('-num_band', type=int, default=5, metavar='', help='Total number of bands to calculate')
+    sufficient; More accurate IFC plot depends on total number of N_kx, N_ky')
+    parser.add_argument('-n', type=float, default=1.525, metavar='', help='Refractive index')
+    #  Unit cell dimension
+    parser.add_argument('-beta', type=float, default=2.3, metavar='', help='The ratio of b/a')
+    parser.add_argument('-t1', type=float, default=0.27, metavar='', help='t1/a ; t1 = 0.2a')
+    parser.add_argument('-t2', type=float, default=0.6, metavar='', help='t2/b ; t2 = 0.6b')
+    args = parser.parse_args()
+
+    main(args)
+```
+```python
+# -------------- Run in Linux terminal -------------------
+
+# ---- Run help ----
+$ python 1.2.0--Band_Data_Calculation.py -h
+
+    usage: 1.2.0--Band_Data_Calculation.py [-h] [-num_band] [-n] [-beta] [-t1]
+                                           [-t2]
+
+    optional arguments:
+      -h, --help  show this help message and exit
+      -num_band   Total number of bands to calculate
+      -n          Refractive index
+      -beta       The ratio of b/a
+      -t1         t1/a ; t1 = 0.2a
+      -t2         t2/b ; t2 = 0.6b
+```
+It outputs **usages** with all the **optional arguments**, and gets them listed out with the help texts.
+```python
+# ---- Run the file itself ----
+$ python 1.2.0--Band_Data_Calculation.py
+
+  {'num_band': 5, 'n': 1.525, 'beta': 2.3, 't1': 0.27, 't2': 0.6}
+  0.27
+  num_band 5
+  n 1.525
+  beta 2.3
+  t1 0.27
+  t2 0.6
+
+```
+   - `args` is **class** data type with many attributes
+   - `vars(args)` converts it to **dictionary** data type
+   - The code below prints out all the components
+   ```python
+   for i, j in vars(data).items():
+       print(i, j)
+# --- output ---
+       num_band 5
+       n 1.525
+       beta 2.3
+       t1 0.27
+       t2 0.6
+  ```
 
 ## 2. **sys.argv**
 
