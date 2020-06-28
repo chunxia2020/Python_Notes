@@ -1,7 +1,7 @@
 # Different data type operations
 
 ## Dictionary
-  - Access elements
+  1.  Access elements
   ```python
   >>> my_dict = {1:'apple', 2:'ball', 3:'cat'}
   ```
@@ -22,14 +22,14 @@
     >>> my_dict.get(1)
     'apple'
     ```
-  - Insert elements
+  2. Insert elements
   ```python
   >>> my_dict['next'] = 'dog'
   >>> my_dict
   {1: 'apple', 2: 'ball', 3: 'cat', 'next': 'dog'}
   ```
 
-  - Change elements
+  3. Change elements
   ```python
  >>> my_dict[2] = 'bat'
  >>> my_dict
