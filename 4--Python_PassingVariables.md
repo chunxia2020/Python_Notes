@@ -1,16 +1,16 @@
-# Function with **variable** inputs
+# Function with **variable** inputs, *kwag type is tuple
   ## 1. *kwag
   ```python
   def person(name, *data):
     print(name)
-    print(data)
+    print(data)   # data type is tuple
 
   > person('chun', 26, 'Orlando', 4584958945)
         chun
         (26, 'Orlando', 4584958945)  
   ```
 
-  ## 2. **kwag : Keyworded variable length argument
+  ## 2. **kwag : Keyworded variable length argument, **kwag type is dict
   ```python
   def person(name, **data):
     print(name)
