@@ -55,15 +55,19 @@
     array([[1, 2, 3],
            [4, 5, 6],
            [7, 8, 9]])
-    >>> array_2[0]
-    array([1, 2, 3])
-    >>> array_2[3-1][2-1]           # Note the output is a number
-    8
-    >>> array_2[0:1,0:1]            # Note the output is an array
-    array([[1]])
-    >>> array_2[0:2,0:2]
-    array([[1, 2],
-           [4, 5]])
+    # 4.1. Take an row
+        >>> array_2[0]
+        array([1, 2, 3])
+    # 4.2. Take an element
+        >>> array_2[3-1][2-1]           # Note the output is a number
+        8
+    # 4.3. Take an element
+        >>> array_2[0:1,0:1]            # Note the output is an array
+        array([[1]])
+    # 4.2. Take a sub array
+        >>> array_2[0:2,0:2]
+        array([[1, 2],
+               [4, 5]])
 # 5. Array size
     >>> X.shape
     (3,2)               # Row: 3; Col: 2
