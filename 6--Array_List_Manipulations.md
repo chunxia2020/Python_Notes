@@ -1,4 +1,5 @@
 ## Create and Get array values
+[Here](https://www.pythonlikeyoumeanit.com/Module3_IntroducingNumpy/AccessingDataAlongMultipleDimensions.html) is a very well-documented treasure 
 ### 1d-array
 ``` python
 # 1. Create an 1d-array by hand
